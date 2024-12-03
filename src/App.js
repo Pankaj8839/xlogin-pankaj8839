@@ -32,8 +32,8 @@ function App() {
       <h1>Login Page</h1>
       {error!=="" && !susess  && <p>{error}</p>}
       {susess ? (<p>Welcome User!</p>):( <form onSubmit={(e)=>hasFormSubmit(e)} className="form"> 
-        <label>Username:<input type="text" placeholder="Username" name='username' value={formData.username} onChange={handleChange} required/></label>
-        <label>Password:<input type="password" placeholder="Password" name='password' value={formData.password} onChange={handleChange} required/></label>
+        <label>username:<input type="text" placeholder="Username" name='username' value={formData.username} onChange={handleChange} required/></label>
+        <label>password:<input type="password" placeholder="Password" name='password' value={formData.password} onChange={handleChange} required/></label>
         <button type="submit">Login</button>
       </form>)}
      
